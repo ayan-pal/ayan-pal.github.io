@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.main-div {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: flex-start;
+    border: 1px solid black;
+    background-color: powderblue;
+    padding: 10px;
+}
+.basic-details-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bio{
+    line-height: 1px;
+    display: flex;
+    flex-direction: column;
+}
+.image-div{
+    width: 100px;
+    height: inherit;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.academics{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+</style>
+</head>
+<body>
+<div class="main-div">
+    <div class="basic-details-div">
+        <div class="bio">
+            <h2>Ayan Pal</h2>
+            <p>25 | Male</p>
+            <p>ayan.pal10101996@gmail.com</p>
+            <p>Software Engineer @ Societe General Global Solution Centre.</p>
+        </div>
+    </div>
+    <div class="academics">
+        <h2>Academics</h2>
+        <table>
+            <tr>
+              <th>Degree</th>
+              <th>Board</th>
+            </tr>
+            <tr>
+              <td>B. Tech (Information Technology)</td>
+              <td>VIT University</td>
+            </tr>
+            <tr>
+              <td>HSC</td>
+              <td>ISC</td>
+            </tr>
+            <tr>
+              <td>SSC</td>
+              <td>ICSE</td>
+            </tr>
+          </table>
+    </div>
+    <div class="academics">
+        <h2>Work Experience</h2>
+        <ul>
+            <li>
+                <strong>Societe Generale Global Solution Centre</strong>: Working as a software developer in Network Automation Team.
+                We use python, Ansible, AWX, Angular, develop REST APIs to automate manual processes and hence reducing human intervention.
+                (2019-Present)
+            </li>
+            <li style='margin-top:5px'>
+                <strong>Societe Generale Global Solution Centre</strong>: Interned in the Network Automation team as Software developer trainee for 6 months.
+                As an intern I worked on real time projects on Automation.
+                (2019)
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="academics">
+        <h2>Professional Projects</h2>
+        <ul>
+            <li>
+                <strong>Automated DNS Record Creation</strong>: The operator receives an excel sheet from a specific team which has requests of DNS Record creation. Our team had to automate this functionality end to end.
+                The system requires excel sheets to be uploaded. It will automatically parse the entire list of data in the backend and
+                Schedule it as requested by the requestor. It will check some prechecks whether the record is already existing or the record can be created or not, then if the prechecks pass, the record can be created.          
+            </li>
+            <li style='margin-top:10px'>
+                <strong>Intrasec ( Firewall Activity Management Tracker )</strong>: This project is a tool that allows a (Network) Team to add firewalls where some activity is scheduled on some particular days ( depending on type of firewall application i.e. retail or market).
+                Then some precheck activities are done and also some post-check activities by the team and the same is updated in the portal
+                The portal keeps track of history data such as monthly and weekly details which help management to take decisions.
+            </li>
+            <li style='margin-top:10px'>
+                <strong>Automation of Alert Management System.</strong>: The project is to automate the entire Level 1 and level 2 activities done by Network Operation team.
+                It involves various step like gathering real time alerts of the global alerts from tools like Spectrum, Shinken, analyse the alert region, type, criticality etc, correlate the alert with previous alerts and raise the service tickets.
+                This entire process was done manually by the NOC team. As a part of Network Transformation, we have automated the entire process.
+            </li>
+        </ul>
+    </div>
+
+    <div class="academics">
+        <h2>Skill Set</h2>
+        <ul>
+            <li>
+                <strong>Programming</strong>: Python, Java.
+            </li>
+            <li>
+                <strong>Web Development</strong>: HTML, CSS, Angular, Bootstrap.         
+            </li>
+            <li>
+                <strong>Database</strong>: MySQL, PostgreSQL.
+            </li>
+            <li>
+                <strong>Version Control</strong>: GIT.         
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
